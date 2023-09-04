@@ -17,6 +17,22 @@ public class VoteDAO {
 		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/xe","user1","1234");
 		return con;
 	}
+	
+	public int saveVote(String v_jumin, String v_name, String m_no, String v_time, String v_area, String v_confirm) throws Exception {
+		con = getConnection();
+		String sql = "insert into TBL_VOTE_202005 values (?,?,?,?,?,?)";
+		pstmt = con.prepareStatement(sql);
+		pstmt.setString(1, v_jumin);
+		pstmt.setString(2, v_name);
+		pstmt.setString(3, m_no);
+		pstmt.setString(4, v_time);
+		pstmt.setString(5, v_area);
+		pstmt.setString(6, v_confirm);
+		
+		int result = pstmt.executeUpdate();
+		return result;
+		
+	}
 	public List<VoteDTO> voteList() throws Exception {
 		con = getConnection();
 		String sql = "select v_name, "

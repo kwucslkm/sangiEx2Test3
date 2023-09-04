@@ -7,7 +7,16 @@ public class VoteDTO {
     private String v_gender;
     private String m_no;
     private String v_time;
+    private String v_area;
     private String v_confirm;
+    
+    
+	public String getV_area() {
+		return v_area;
+	}
+	public void setV_area(String v_area) {
+		this.v_area = v_area;
+	}
 	public String getV_name() {
 		return v_name;
 	}

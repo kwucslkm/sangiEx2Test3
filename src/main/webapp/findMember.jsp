@@ -8,7 +8,21 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style>
+	table {
+		margin : auto;
+	}
+	table, tr, th, td {
+		text-align : center;
+		border : solid 1px gray;
+		border-collapse : collapse;
+	}
+	h2 {
+		text-align : center;
+	}
+</style>
 </head>
+
 <body>
 <%@include file="header.jsp" %>
 <%@include file="nav.jsp" %>

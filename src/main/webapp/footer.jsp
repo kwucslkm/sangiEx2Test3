@@ -5,8 +5,12 @@
 		text-align : center;
 		background-color:blue;
 		color : white;
+		padding : 5px;
+	}
+	h4 {
+		margin : 0;
 	}
 </style>
 <div id="footer">
-	<h5>HRDKOREA Copyright&copy;2015</h5>
+	<h4>HRDKOREA Copyright&copy;2015</h4>
 </div>

@@ -5,6 +5,12 @@
 <head>
 <meta charset="EUC-KR">
 <title>Insert title here</title>
+<style>
+	*{
+		margin : 0;
+		padding : 0;
+	}
+</style>
 </head>
 <body>
 	<%@include file="header.jsp" %>

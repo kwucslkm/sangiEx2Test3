@@ -5,6 +5,11 @@
 		text-align : center;
 		background-color:blue;
 		color : white;
+		margin : 0;
+		padding : 15px;
+	}
+	h2 {
+		margin : 0;
 	}
 </style>
 <div id="header">
